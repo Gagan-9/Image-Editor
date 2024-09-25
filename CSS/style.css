@@ -1,0 +1,171 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-color: #2f3640;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1e272e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f80000;
+    font-size: 28px;
+    letter-spacing: 2px;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+}
+
+/* Upload and Download buttons with equal size */
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#upload, .download {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: #205a81;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0.8rem;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 19px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#upload i, .download i {
+    margin-right: 8px;
+}
+
+#upload:hover, .download:hover {
+    background-color: #1c1c1c;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #1e272e;
+    padding: 15px;
+    text-align: center;
+    color: #d2d9dc;
+    margin-top: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 140px);
+}
+
+/* Sidebar for tools */
+.sidebar {
+    width: 280px;
+    background-color: #000000;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Editor Buttons */
+.editor button {
+    cursor: pointer;
+    border: 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 0.4rem;
+    margin: 8px 0;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.buttons {
+    background-color: #205a81;
+}
+
+.buttons:hover {
+    background-color: #000000;
+}
+
+.buttons2 {
+    background-color: #205a81;
+}
+
+.buttons2:hover {
+    background-color: #000000;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+/* Main display area */
+.main-display {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 19px;
+    border: 5px solid #141d24; /* Change to your desired border color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+    transition: border-color 0.3s ease;
+}
+
+/* Optional: Change border color on hover */
+.main-display:hover {
+    border-color: #141d24; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .main-display {
+        padding: 10px;
+    }
+}
